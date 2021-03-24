@@ -1,42 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 *{
-    font-family: "";
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: none;
+    box-sizing: border-box;
 }
 
 section{
-    position: none;
-    width: 0%;
-    min-height: 0vh;
-    padding:0px;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
     display:flex;
     justify-content: space-between;
     align-items: center;
     background: #0062be;
-    transition: 0s;
+    transition: 0.5s;
 }
 
+
+
 header{
-    position:none;
-    top:0;
-    left:0;
-    width: 0%;
-    padding: 0px 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 header .logo{
-    position:none;
-    max-width: 0px;
+    position:relative;
+    max-width: 100px;
 }
 
 header ul{
-    position:none;
+    position:relative;
     display:flex;
 }
 
@@ -47,14 +49,14 @@ header ul li{
 header ul li a{
     display: inline-block;
     color: #fff;
-    font-weight: 0;
-    margin-left: 0px;
+    font-weight: 400;
+    margin-left: 50px;
     text-decoration: none;
 }
 
 .content{
-    position:none;
-    width:0%;
+    position:relative;
+    width:100%;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -62,20 +64,20 @@ header ul li a{
 }
 
 .content .textBox{
-    position:none;
-    max-width:0px;
+    position:relative;
+    max-width:600px;
 }
 
 .content .textBox h2{
     color: #fff;
-    font-size: 0em;
-    line-height:0em;
-    font-weight: 0;
+    font-size: 4em;
+    line-height:1.5em;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
 .content .textBox h2 span{
-    font-size: 0em;
+    font-size: 2em;
 }
 
 .content .textBox p{
@@ -84,58 +86,58 @@ header ul li a{
 
 .content .textBox a{
     display: inline-block;
-    margin-top: 0px;
-    padding: 0px 0px;
+    margin-top: 25px;
+    padding: 5px 20px;
     background: #fff;
     color: #111;
-    border-radius: 0px;
-    font-weight: 0;
-    letter-spacing: 0px;
+    border-radius: 50px;
+    font-weight: 400;
+    letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 .content .imgBox{
-    width: 0px;
+    width: 600px;
     display: flex;
-    padding-right: 0px;
-    margin-top: 0px;
+    padding-right: 50px;
+    margin-top: 100px;
     justify-content: flex-end;
 }
 
 .content .imgBox img{
-    max-width: 0px;
+    max-width: 500px;
 }
 
 .thumb{
-    position:none;
-    left: 0%;
-    transform: translateX(-0%);
-    bottom:0px;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:20px;
     display:flex;
 }
 
 .thumb li{
     list-style:none;
     display: inline-block;
-    margin: 0 0px;
+    margin: -10px 10px;
     cursor: pointer;
-    transition:0s;
+    transition:0.5s;
 }
 
 .thumb li:hover{
-    transform: translateY(-0px);
+    transform: translateY(-10px);
 }
 
 .thumb li img{
-    max-width: 0px;
+    max-width: 40px;
 }
 
 .sci{
-    position:none;
-    top:0%;
-    right:0px;
-    transform: translateY(-0%);
+    position:absolute;
+    top: 50%;
+    right:30px;
+    transform: translateY(-50%);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -149,6 +151,7 @@ header ul li a{
 .sci li a{
     display: inline-block;
     filter: invert(1);
-    margin: 0px 0;
-    transform: scale(0);
+    margin: 0px 0px;
+    transform: scale(0.5);
 }
+
